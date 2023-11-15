@@ -1,5 +1,5 @@
 import numpy as np
-from numpy import bool_, inf, int, float
+from numpy import bool_, inf, int_, float_
 from sklearn.base import BaseEstimator, TransformerMixin
 import featuretools as ft
 

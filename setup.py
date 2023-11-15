@@ -21,7 +21,7 @@ setup(name=__name__,
       url="https://github.com/schmidtbri/regression-model",
       license="BSD",
       packages=find_packages(exclude=["tests", "*tests", "tests*"]),
-      install_requires=["ml-base>=0.1.0", "rest_model_service>=0.1.0", "pandas", "scikit-learn==0.24.2",
+      install_requires=["ml-base>=0.1.0", "rest_model_service>=0.1.0", "pandas", "scikit-learn==1.3.2",
                         "featuretools==0.24.0", "tpot==0.11.7"],
       extras_require={
             "training": ["kaggle", "jupyter", "pandas_profiling", "yellowbrick"],

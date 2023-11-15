@@ -49,7 +49,8 @@ class InsuranceChargesModel(MLModel):
 
         """
         dir_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-        with open(os.path.join(dir_path, "model_files", "1", "model.joblib"), 'rb') as file:
+        # with open(os.path.join(dir_path, "model_files", "1", "model.joblib"), 'rb') as file:
+        with open(os.path.join(dir_path, "..", "model.joblib"), 'rb') as file:
             self._svm_model = joblib.load(file)
 
     def predict(self, data: InsuranceChargesModelInput) -> InsuranceChargesModelOutput:

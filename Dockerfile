@@ -1,8 +1,8 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11-slim
 
-MAINTAINER Brian Schmidt "6666331+schmidtbri@users.noreply.github.com"
+LABEL MAINTAINER Brian Schmidt "6666331+schmidtbri@users.noreply.github.com"
 
-WORKDIR ./service
+WORKDIR /app/service
 
 COPY ./insurance_charges_model ./insurance_charges_model
 COPY ./rest_config.yaml ./rest_config.yaml
