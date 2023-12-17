@@ -4,4 +4,4 @@ ml-base>=0.1.0
 pandas
 rest_model_service>=0.1.0
 scikit-learn==1.3.2
-tpot==0.11.7
+tpot==0.12.1
